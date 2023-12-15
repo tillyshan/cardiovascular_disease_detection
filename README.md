@@ -1,5 +1,10 @@
 # Project: cardiovascular diseases detection
 
+## Introduction
+**What is Cardiovascular disease:**
+
+Cardiovascular disease (CVD) is a term for problems related to the heart and blood vessels. It includes issues like heart attacks, heart failure, and problems with blood vessels. These can happen when things like high blood pressure, high cholesterol, or smoking damage your heart or blood vessels. 
+
 ## Description:
 Developed a machine learning model to predict the presence of cardiovascular disease in patients based on a comprehensive dataset. 
 
