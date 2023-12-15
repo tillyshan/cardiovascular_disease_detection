@@ -59,9 +59,12 @@ Data set has 70,000 data points and 12 features.
 ### Exploratory Data Analysis:
 Further analyzed data set using different charts, summaries.
 
-3. **Data cleaning:** Performed data cleaning to handle missing values, duplicate entries, and inconsistent data. Identified and removed outliers that could impact model performance. When removing outliers for blood pressure values, consider the standards rather than a specific method for detecting outliers.
-   
-**Standards for Minimum and Maximum Values for Detecting Outliers in Diastolic Blood Pressure:
+![](https://github.com/tillyshan/cardiovascular_disease_detection/blob/main/images/image1.png)
+
+### Data cleaning:
+Performed data cleaning to handle missing values, duplicate entries, and inconsistent data. Identified and removed outliers that could impact model performance. When removing outliers for blood pressure values, consider the standards rather than a specific method for detecting outliers.
+
+**Standards for Minimum and Maximum Values for Detecting Outliers in Diastolic Blood Pressure:**
 **For Adults (18 and Older):**
 - *Lower Limit:* 40 mmHg or lower
 - *Upper Limit:* 110 mmHg or higher
@@ -71,15 +74,53 @@ Further analyzed data set using different charts, summaries.
 - *Upper Limit:* 100 mmHg or higher
 or higher
 
+**Standards for Minimum and Maximum Values for Detecting Outliers in Systolic Blood Pressure:**
 
-4. **Data Preprocessing:** Applied feature scaling techniques to standardize feature values.Encoded categorical features for compatibility with machine learning algorithms.
-6. **Model Evaluation:** Implemented logistic regression, linear SVM, random forest, and GaussianNB models.
-7. **Ensemble Methods:** Utilized a hard voting classifier to combine the strengths of multiple models.
-8. **Performance Comparison:** Compared the performance of different models based on various metrics.
-9. **Model Selection:** Chose the best performing model.
-10. **Hyper Parameter Tuning:** Further improve model performances by tuning hyper parameters.
-11. **Test the model on unseen Data** Model was tested on test set
-12. **Build eb Application** Build interactive web application using streamlit
+**For Adults (18 Years and Older):**
+- *Lower Limit:* 60 mmHg or lower
+- *Upper Limit:* 220 mmHg or higher
+
+**For Older Adults (65 Years and Older):**
+- *Lower Limit:* 50 mmHg or lower
+- *Upper Limit:* 200 mmHg or higher
+or higheror higher
+
+![](https://github.com/tillyshan/cardiovascular_disease_detection/blob/main/images/image2.png)
+
+## Data Preprocessing:
+Applied feature scaling techniques to standardize feature values.Encoded categorical features for compatibility with machine learning algorithms.
+
+## Model Evaluationon Base line Scores:
+Implemented logistic regression, linear SVM, random forest, and GaussianNB models.
+
+![](https://github.com/tillyshan/cardiovascular_disease_detection/blob/main/images/image4.png)
+
+## Try Ensemble Methods:
+Utilized a hard voting classifier to combine the strengths of multiple models.
+
+## Performance Comparison and model selection
+Compared the performance of different models based on various metrics and Chose the best performing model.
+
+## Hyper Parameter Tuning:
+Further improve model performances by tuning hyper parameters. 
+
+## Test the model on unseen Data
+The model was tested on the test set. Check whether the model generalized well and evaluate its performance using various metrics.
+
+Please visit the [repository](https://github.com/tillyshan/cardiovascular_disease_detection/blob/main/cardiovascular_disease_detection.ipynb)) for the Code.
+
+## Completed model adjustments for two different business scenarios.
+
+**Scenario 1:**
+
+![](https://github.com/tillyshan/cardiovascular_disease_detection/blob/main/images/image5.png)
+
+**Scenario 2:**
+
+![](https://github.com/tillyshan/cardiovascular_disease_detection/blob/main/images/image6.png)
+
+## Build Web Application
+Build interactive web application using streamlit.
 
 Please visit the [repository](https://github.com/tillyshan/Heart-Disease-detection/blob/main/heart%20disease%20detection.ipynb) for the Code.
 
@@ -91,24 +132,21 @@ After evaluating multiple machine learning models, the final model was selected 
 
 To make the model accessible and user-friendly, a basic web application was created using the Streamlit library. The application allows users to input relevant data and get predictions regarding the likelihood of heart disease. It provides a basic user-friendly interface.
 
-Please visit the [repository](https://github.com/tillyshan/Heart-Disease-detection/blob/main/web%20application.py) for the model.
-
-![App interface](https://github.com/tillyshan/Heart-Disease-detection/blob/main/image.png)
-
+Please visit the [repository](https://github.com/tillyshan/cardiovascular_disease_detection/blob/main/app.py) for the app.
 
 ### Usage
-To run the Heart Disease Detection application, follow these steps:
+To run the Cardiovascular Disease Detection app, follow these steps:
 
 1. **Clone the Repository:** Clone the GitHub repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/tillyshan/Heart-Disease-detection.git
+   git clone https://github.com/tillyshan/cardiovascular_disease_detection.git
     ```
 
 2.**Run the Application:** Start the application by running the following command in your Anaconda Prompt, Command Prompt, or PyCharm Terminal:
 
    ```bash
-   streamlit run web application.py
+   streamlit run web app.py
    ```
 
 3. **Access the Application:** Open a web browser and navigate to the URL provided in the terminal (usually, it will be something like http://localhost:8501). You will see the user-friendly interface where you can enter your details.
@@ -118,7 +156,7 @@ Please note that the application is for demonstration and educational purposes.
 ### Future Enhancements
 "The model achieves a 70% accuracy rate. Various models and model combinations can be employed to enhance performance."
 
-This README provides an overview of the "Heart Disease Detection" project, highlighting its key components and the development of a user-friendly web application for predicting heart disease. For more detailed information and access to the code, please visit the [repository] (https://github.com/tillyshan/Heart-Disease-detection)).
+This README provides an overview of the " Cardiovascular Disease Detection" project, highlighting its key components and the development of a user-friendly web application for predicting heart disease. For more detailed information and access to the code, please visit the ![repository](https://github.com/tillyshan/cardiovascular_disease_detection).
 
 This project showcased the significance of prioritizing recall for the positive class in the context of heart disease detection, emphasizing the accurate identification of patients at risk. It demonstrated the effective use of machine learning and data preprocessing techniques to build a robust predictive model for healthcare applications.
 
