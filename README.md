@@ -107,7 +107,7 @@ Further improve model performances by tuning hyper parameters.
 ## Test the model on unseen Data
 The model was tested on the test set. Check whether the model generalized well and evaluate its performance using various metrics.
 
-Please visit the [repository](https://github.com/tillyshan/cardiovascular_disease_detection/blob/main/cardiovascular_disease_detection.ipynb)) for the Code.
+Please visit the [repository](https://github.com/tillyshan/cardiovascular_disease_detection/blob/main/cardiovascular_disease_detection.ipynb) for the Code.
 
 ## Completed model adjustments for two different business scenarios.
 
@@ -122,17 +122,7 @@ Please visit the [repository](https://github.com/tillyshan/cardiovascular_diseas
 ## Build Web Application
 Build interactive web application using streamlit.
 
-Please visit the [repository](https://github.com/tillyshan/Heart-Disease-detection/blob/main/heart%20disease%20detection.ipynb) for the Code.
-
-### Model Selection and Web Application
-
-After evaluating multiple machine learning models, the final model was selected based on its performance, with a focus on recall for the positive class, ensuring accurate identification of heart disease patients.
-
-#### Best Model: [Logistic Regression]
-
-To make the model accessible and user-friendly, a basic web application was created using the Streamlit library. The application allows users to input relevant data and get predictions regarding the likelihood of heart disease. It provides a basic user-friendly interface.
-
-Please visit the [repository](https://github.com/tillyshan/cardiovascular_disease_detection/blob/main/app.py) for the app.
+Please visit the [repository](https://github.com/tillyshan/cardiovascular_disease_detection/blob/main/app.py) for the model Code.
 
 ### Usage
 To run the Cardiovascular Disease Detection app, follow these steps:
@@ -156,7 +146,7 @@ Please note that the application is for demonstration and educational purposes.
 ### Future Enhancements
 "The model achieves a 70% accuracy rate. Various models and model combinations can be employed to enhance performance."
 
-This README provides an overview of the " Cardiovascular Disease Detection" project, highlighting its key components and the development of a user-friendly web application for predicting heart disease. For more detailed information and access to the code, please visit the ![repository](https://github.com/tillyshan/cardiovascular_disease_detection).
+This README provides an overview of the " Cardiovascular Disease Detection" project, highlighting its key components and the development of a user-friendly web application for predicting heart disease. For more detailed information and access to the code, please visit the [repository](https://github.com/tillyshan/cardiovascular_disease_detection).
 
 This project showcased the significance of prioritizing recall for the positive class in the context of heart disease detection, emphasizing the accurate identification of patients at risk. It demonstrated the effective use of machine learning and data preprocessing techniques to build a robust predictive model for healthcare applications.
 
