@@ -8,7 +8,12 @@ Developed a machine learning model to predict the presence of cardiovascular dis
 
  Business Requirement 2:
 - Consider our client, an online medicine shop. They wish to offer a 50 percent discount on specific medicines to customers who have a disease. Their requirement is to send the discount offer via email only to customers with a disease.
- 
+
+ **Interactive APP:**
+- Built an interactive web application using sreamlit framework.
+- 
+
+
 **Technologies and Libraries:**
 - Python
 - Pandas
