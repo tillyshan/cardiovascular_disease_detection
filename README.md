@@ -1,6 +1,6 @@
 # Project: cardiovascular diseases detection
 
-**Description:**
+## Description:
 Developed a machine learning model to predict the presence of cardiovascular disease in patients based on a comprehensive dataset. 
 
  Business Requirement 1:
@@ -11,10 +11,11 @@ Developed a machine learning model to predict the presence of cardiovascular dis
 
  **Interactive APP:**
 - Built an interactive web application using sreamlit framework.
-- 
+  
+![APP Interface](https://github.com/tillyshan/cardiovascular_disease_detection/blob/main/gif.gif)
 
 
-**Technologies and Libraries:**
+## Technologies and Libraries:
 - Python
 - Pandas
 - NumPy
@@ -23,10 +24,54 @@ Developed a machine learning model to predict the presence of cardiovascular dis
 - Scikit-learn
 - Streamlit
 
-**Key Steps:**
-1. **Understand the Data:** Thoroughly analyzed the dataset to understand its structure and characteristics.
-2. **Exploratory Data Analysis:** Further analyzed data set using different charts, summaries. 
-3. **Data cleaning:** Performed data cleaning to handle missing values, duplicate entries, and inconsistent data. Identified and removed outliers that could impact model performance.
+## Key Steps:
+
+### Understand the Data:
+Data set has 70,000 data points and 12 features.
+<h4><font color='purple'>There are 3 types of input features:</font></h4>
+<ul>
+    <li>Objective: factual information;</li>
+    <li>Examination: results of medical examination;</li>
+    <li>Subjective: information given by the patient.</li>
+</ul>
+
+<h4><font color = 'purple'>Features:</font></h4>
+<ul>
+    <li>Age | Objective Feature | age | int (days)|</li>
+    <li>Height | Objective Feature | height | int (cm) |</li>
+    <li>Weight | Objective Feature | weight | float (kg) |</li>
+    <li>Gender | Objective Feature | gender | categorical code |</li>
+    <li>Systolic blood pressure | Examination Feature | ap_hi | int |</li>
+    <li>Diastolic blood pressure | Examination Feature | ap_lo | int |</li>
+    <li>Cholesterol | Examination Feature | cholesterol | 1: normal, 2: above normal, 3: well above normal |</li>
+    <li>Glucose | Examination Feature | gluc | 1: normal, 2: above normal, 3: well above normal |</li>
+    <li>Smoking | Subjective Feature | smoke | binary |</li>
+    <li>Alcohol intake | Subjective Feature | alco | binary |</li>
+    <li>Physical activity | Subjective Feature | active | binary |</li>
+    <li>Presence or absence of cardiovascular disease | Target Variable | cardio | binary |</li>
+</ul>
+
+- **Systolic blood pressurepressure:** pressure during the heart's contraction or systole.
+- **Diastolic blood pressure:** pressure when the heart is at rest or between beats during diastole.
+  
+<font color='purple'>**All of the dataset values were collected at the moment of medical examination.**</font>
+
+### Exploratory Data Analysis:
+Further analyzed data set using different charts, summaries.
+
+3. **Data cleaning:** Performed data cleaning to handle missing values, duplicate entries, and inconsistent data. Identified and removed outliers that could impact model performance. When removing outliers for blood pressure values, consider the standards rather than a specific method for detecting outliers.
+   
+**Standards for Minimum and Maximum Values for Detecting Outliers in Diastolic Blood Pressure:
+**For Adults (18 and Older):**
+- *Lower Limit:* 40 mmHg or lower
+- *Upper Limit:* 110 mmHg or higher
+
+**For Older Adults (65 and Older):**
+- *Lower Limit:* 30 mmHg or lower
+- *Upper Limit:* 100 mmHg or higher
+or higher
+
+
 4. **Data Preprocessing:** Applied feature scaling techniques to standardize feature values.Encoded categorical features for compatibility with machine learning algorithms.
 6. **Model Evaluation:** Implemented logistic regression, linear SVM, random forest, and GaussianNB models.
 7. **Ensemble Methods:** Utilized a hard voting classifier to combine the strengths of multiple models.
